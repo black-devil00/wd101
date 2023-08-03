@@ -45,7 +45,7 @@ const saveUserForm = (event) => {
     const name = document.getElementById("name").value;
     const email = document.getElementById("email").value;
     const password = document.getElementById("password").value;
-    const dob = new Date(document.getElementById("dob").value);
+    const dob = document.getElementById("dob").value;
     const acceptedTerms = document.getElementById("acceptedTerms").checked;
 
     // Validate age between 18 and 55
