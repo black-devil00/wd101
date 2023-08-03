@@ -45,12 +45,12 @@ const saveUserForm = (event) => {
     const name = document.getElementById("name").value;
     const email = document.getElementById("email").value;
     const password = document.getElementById("password").value;
-    const dob = document.getElementById("dob").value;
+    const dob = document.getElementById("DOB").value;
     const acceptedTerms = document.getElementById("acceptedTerms").checked;
 
     // Validate age between 18 and 55
-    count dob_object = new date(dob)
-    const age = dob_object.getFullYear() - dob.getFullYear();
+    const dob_object = new Date(dob)
+    const age = new Date().getFullYear() - dob_object.getFullYear();
     if (age < 18 || age > 55) {
         alert("You must be between 18 and 55 years old to register.");
         return;
