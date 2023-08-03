@@ -33,7 +33,7 @@ const displayEntries = () => {
     <th class="px-4 py-2">Email</th>
     <th class="px-4 py-2">Password</th>
     <th class="px-4 py-2">Dob</th>
-    <th class="px-4 py-2">acceptedTerms</th>
+    <th class="px-4 py-2">acceptedTerms?</th>
  </tr>${tableEntries} </table>`;
  let deatils = document.getElementById("user");
  deatils.innerHTML = table;
@@ -45,7 +45,7 @@ const saveUserForm = (event) => {
     const name = document.getElementById("name").value;
     const email = document.getElementById("email").value;
     const password = document.getElementById("password").value;
-    const dob = document.getElementById("DOB").value;
+    const dob = document.getElementById("dob").value;
     const acceptedTerms = document.getElementById("acceptedTerms").checked;
 
     // Validate age between 18 and 55
